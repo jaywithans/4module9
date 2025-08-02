@@ -1,0 +1,29 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore crash log files
+crash.log
+
+# Ignore .terraform directories (provider plugins, modules, etc)
+.terraform/
+
+# Ignore override files that are local and should not be committed
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore sensitive files
+*.tfvars
+*.tfvars.json
+
+# Ignore any IDE/editor specific files (optional)
+.vscode/
+.idea/
+*.swp
+*~
