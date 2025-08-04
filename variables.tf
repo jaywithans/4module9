@@ -30,6 +30,12 @@ variable "azure_region_2" {
   default     = "West US"
 }
 
+variable "my_ip" {
+  description = "Your IP address to allow access."
+  type        = string
+  default     = ""
+}
+
 variable "azure_windows_username" {
   description = "The username for the Azure Windows VM."
   type        = string
@@ -48,8 +54,8 @@ variable "azure_linux_username" {
   default     = "azureuser"
 }
 
-variable "azure_linux_password" {
-  description = "The password for the Azure Linux VM."
+variable "public_key_path" {
+  description = "The path to the SSH public key."
   type        = string
-  default     = "Hipposinspace27!"
+  default     = ""
 }
